@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression Model Prediction</title>
+</head>
+<body>
+    <h1>Regression Model Prediction</h1>
+    
+    <form method="post" action="/predict">
+        <label for="feature1">Original Price</label>
+        <input type="text" name="feature1" required>
+        
+        <label for="feature2">Delivery Charges</label>
+        <input type="text" name="feature2" required>
+        
+        <button type="submit">Predict</button>
+    </form>
+
+   
+        <h2>{{ prediction }}</h2>
+    
+</body>
+</html>
